@@ -1,0 +1,264 @@
+/* TactiQ Dashboard — Design System v2 */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+/* ── Base ──────────────────────────────────────────────────────────────────── */
+html, body, [data-testid="stAppViewContainer"] {
+    font-family: 'Inter', 'system-ui', sans-serif !important;
+    background: #080C14 !important;
+}
+
+[data-testid="stAppViewContainer"] {
+    border-top: 2px solid #00D4A0;
+}
+
+[data-testid="stMain"] {
+    padding-top: 1.5rem !important;
+}
+
+/* ── Hide chrome ───────────────────────────────────────────────────────────── */
+#MainMenu { visibility: hidden; }
+footer    { visibility: hidden; }
+header    { visibility: hidden; }
+
+/* ── Sidebar ───────────────────────────────────────────────────────────────── */
+[data-testid="stSidebar"] {
+    background: #060A12 !important;
+    border-right: 1px solid rgba(0, 212, 160, 0.12);
+}
+[data-testid="stSidebar"] hr {
+    border-color: rgba(255,255,255,0.06);
+    margin: 0.6rem 0;
+}
+[data-testid="stSidebarContent"] {
+    padding: 0.75rem 0.75rem;
+}
+
+/* ── Sidebar nav pills ─────────────────────────────────────────────────────── */
+[data-testid="stSidebarNavLink"] {
+    border-radius: 8px !important;
+    padding: 0.45rem 0.8rem !important;
+    margin: 2px 0 !important;
+    font-size: 0.87rem !important;
+    font-weight: 500 !important;
+    color: #6B7394 !important;
+    transition: background 0.15s, color 0.15s, border-color 0.15s !important;
+    border: 1px solid transparent !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+}
+[data-testid="stSidebarNavLink"]:hover {
+    background: rgba(255,255,255,0.05) !important;
+    color: #C0C8E8 !important;
+    border-color: rgba(255,255,255,0.08) !important;
+}
+[data-testid="stSidebarNavLink"][aria-current="page"] {
+    background: rgba(0,212,160,0.1) !important;
+    color: #00D4A0 !important;
+    border-color: rgba(0,212,160,0.2) !important;
+    font-weight: 700 !important;
+}
+[data-testid="stSidebarNavItems"] {
+    padding: 0.25rem 0 !important;
+    margin-bottom: 0.5rem !important;
+}
+
+/* ── Metric cards ──────────────────────────────────────────────────────────── */
+[data-testid="metric-container"] {
+    background: #0F1520;
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 12px;
+    padding: 1.1rem 1.25rem !important;
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.2s;
+}
+[data-testid="metric-container"]:hover {
+    border-color: rgba(0,212,160,0.3);
+}
+[data-testid="metric-container"]::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #00D4A0, #7C6FE0);
+    opacity: 0.7;
+}
+[data-testid="stMetricValue"] {
+    font-size: 2rem !important;
+    font-weight: 800 !important;
+    color: #E8EDF8 !important;
+    letter-spacing: -0.02em;
+    line-height: 1.1 !important;
+}
+[data-testid="stMetricLabel"] {
+    font-size: 0.7rem !important;
+    color: #5A6380 !important;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 600 !important;
+}
+
+/* ── Champion card ─────────────────────────────────────────────────────────── */
+.champion-card {
+    background: linear-gradient(145deg, #0F1A28 0%, #101828 60%, #0A1F18 100%);
+    border: 1px solid rgba(0,212,160,0.2);
+    border-radius: 16px;
+    padding: 1.5rem 1.75rem;
+    margin-bottom: 1rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 40px rgba(0,212,160,0.06), inset 0 1px 0 rgba(255,255,255,0.05);
+}
+.champion-card::before {
+    content: '';
+    position: absolute;
+    top: -40px; right: -40px;
+    width: 200px; height: 200px;
+    background: radial-gradient(circle, rgba(0,212,160,0.08) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+.champion-card h2 {
+    color: #00D4A0;
+    margin: 0 0 0.6rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+}
+.champion-card h1 {
+    color: #E8EDF8;
+    margin: 0 0 0.5rem;
+    font-size: 2.6rem;
+    font-weight: 900;
+    letter-spacing: -0.03em;
+    line-height: 1;
+}
+
+/* ── Upset alert cards ─────────────────────────────────────────────────────── */
+.upset-alert {
+    background: rgba(251,146,60,0.05);
+    border: 1px solid rgba(251,146,60,0.2);
+    border-radius: 12px;
+    padding: 1.1rem 1.25rem;
+    margin-bottom: 0.75rem;
+    transition: border-color 0.2s, background 0.2s;
+    height: 100%;
+}
+.upset-alert:hover {
+    background: rgba(251,146,60,0.09);
+    border-color: rgba(251,146,60,0.4);
+}
+.upset-alert h4 {
+    color: #FBBF24;
+    margin: 0 0 0.5rem;
+    font-size: 0.68rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+/* ── Section headers ───────────────────────────────────────────────────────── */
+.section-header {
+    color: #3A4060;
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin: 1.25rem 0 0.6rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+/* ── Archetype cards ───────────────────────────────────────────────────────── */
+.arch-card {
+    background: #0F1520;
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 12px;
+    padding: 0.9rem 1rem;
+    height: 100%;
+    transition: transform 0.15s, border-color 0.15s;
+}
+.arch-card:hover {
+    transform: translateY(-2px);
+    border-color: rgba(255,255,255,0.14);
+}
+.arch-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+/* ── Bracket steps ─────────────────────────────────────────────────────────── */
+.bracket-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.82rem;
+    padding: 0.45rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+.bracket-row:last-child { border-bottom: none; }
+
+/* ── Pill badges ───────────────────────────────────────────────────────────── */
+.badge {
+    display: inline-block;
+    padding: 3px 12px;
+    border-radius: 999px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+.badge-green  { background: rgba(0,212,160,0.15); color: #00D4A0; border: 1px solid rgba(0,212,160,0.3); }
+.badge-amber  { background: rgba(251,191,36,0.12); color: #FBBF24; border: 1px solid rgba(251,191,36,0.3); }
+.badge-highpress  { background: rgba(0,212,160,0.15);  color: #00D4A0; }
+.badge-possession { background: rgba(124,111,224,0.15); color: #9F8FF0; }
+.badge-counter    { background: rgba(239,100,70,0.15);  color: #F07050; }
+.badge-deep       { background: rgba(59,152,234,0.15);  color: #5EA9E8; }
+.badge-proxy      { background: rgba(100,100,120,0.15); color: #8888A8; }
+
+/* ── Stat rows in sidebar ──────────────────────────────────────────────────── */
+.stat-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.35rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    font-size: 0.8rem;
+}
+.stat-row:last-child { border-bottom: none; }
+.stat-label { color: #4A5270; font-size: 0.72rem; }
+.stat-value { color: #C0C8E8; font-weight: 600; }
+
+/* ── Result banners ────────────────────────────────────────────────────────── */
+.result-banner {
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    margin: 0.75rem 0;
+    text-align: center;
+}
+.result-win  { background: rgba(0,212,160,0.1);  border: 1px solid rgba(0,212,160,0.3); }
+.result-draw { background: rgba(251,191,36,0.1); border: 1px solid rgba(251,191,36,0.3); }
+.result-loss { background: rgba(239,68,68,0.1);  border: 1px solid rgba(239,68,68,0.3); }
+
+/* ── Divider ───────────────────────────────────────────────────────────────── */
+[data-testid="stDivider"] { border-color: rgba(255,255,255,0.06) !important; }
+
+/* ── Streamlit selectbox / inputs ──────────────────────────────────────────── */
+[data-testid="stSelectbox"] > div > div {
+    background: #0F1520 !important;
+    border-color: rgba(255,255,255,0.1) !important;
+    border-radius: 8px !important;
+}
+
+/* ── Info / warning boxes ──────────────────────────────────────────────────── */
+[data-testid="stInfo"] {
+    background: rgba(0,212,160,0.06) !important;
+    border: 1px solid rgba(0,212,160,0.2) !important;
+    border-radius: 10px !important;
+}
