@@ -18,12 +18,12 @@ def get_engine():
     try:
         cfg = st.secrets["postgres"]
         url = (
-            f"postgresql+psycopg2://{cfg['user']}:{cfg['password']}"
+            f"postgresql+pg8000://{cfg['user']}:{cfg['password']}"
             f"@{cfg['host']}:{cfg.get('port', 5432)}/{cfg['dbname']}"
         )
     except (KeyError, FileNotFoundError):
         url = (
-            f"postgresql+psycopg2://{os.getenv('DB_USER')}:{os.getenv('DB_PASSWORD')}"
+            f"postgresql+pg8000://{os.getenv('DB_USER')}:{os.getenv('DB_PASSWORD')}"
             f"@{os.getenv('DB_HOST', 'localhost')}:{os.getenv('DB_PORT', '5432')}"
             f"/{os.getenv('DB_NAME', 'tactiq')}"
         )

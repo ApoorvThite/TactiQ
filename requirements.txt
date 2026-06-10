@@ -1,6 +1,6 @@
 pandas==2.3.3
 numpy==2.4.6
-psycopg2-binary==2.9.9
+pg8000==1.31.2
 sqlalchemy==2.0.50
 python-dotenv==1.0.1
 streamlit==1.58.0
