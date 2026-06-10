@@ -19,17 +19,20 @@ html, body, [data-testid="stAppViewContainer"] {
 /* ── Hide chrome ───────────────────────────────────────────────────────────── */
 #MainMenu { visibility: hidden; }
 footer    { visibility: hidden; }
-header    { visibility: hidden; }
-
-/* ── Keep sidebar toggle button visible even when header is hidden ─────────── */
-[data-testid="stSidebarCollapsedControl"],
-[data-testid="stSidebarCollapseButton"],
-header [data-testid="stSidebarCollapseButton"],
-section[data-testid="stSidebar"] > div:first-child button {
+/* Hide header contents but NOT buttons (sidebar toggle lives here in 1.58) */
+header { visibility: hidden; }
+header button,
+header [role="button"] {
     visibility: visible !important;
     opacity: 1 !important;
     pointer-events: auto !important;
-    display: flex !important;
+}
+/* Collapsed sidebar re-open button (floats outside header in some versions) */
+[data-testid="stSidebarCollapsedControl"],
+[data-testid="collapsedControl"] {
+    visibility: visible !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
 }
 
 /* ── Sidebar ───────────────────────────────────────────────────────────────── */
