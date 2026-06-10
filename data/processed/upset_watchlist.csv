@@ -1,0 +1,73 @@
+group,team_a,team_b,archetype_a,archetype_b,p_win_a,p_draw,p_loss_a,is_upset_candidate,top_upset_feature,upset_explanation,upset_rank,p_not_fav_win
+A,Mexico,South Africa,Possession Control,Deep Block,0.496,0.215,0.288,True,delta_matches_played,"South Africa's defensive shape neutralises Mexico's pressing advantage (PPDA SHAP toward upset). ""Deep defensive block creates upset conditions""",20.0,0.504
+A,South Korea,Czech Republic,Deep Block,Counter-Attack,0.293,0.238,0.469,False,delta_avg_xg_ratio,,,0.707
+A,Mexico,South Korea,Possession Control,Deep Block,0.458,0.232,0.31,True,delta_avg_ppda,"South Korea's defensive shape neutralises Mexico's pressing advantage (PPDA SHAP toward upset). ""Deep defensive block creates upset conditions""",12.0,0.542
+A,South Africa,Czech Republic,Deep Block,Counter-Attack,0.251,0.204,0.545,False,delta_avg_xg_ratio,,,0.749
+A,Mexico,Czech Republic,Possession Control,Counter-Attack,0.401,0.203,0.396,False,delta_avg_xg_ratio,,,0.599
+A,South Africa,South Korea,Deep Block,Deep Block,0.338,0.225,0.437,False,delta_matches_played,,,0.662
+B,Canada,Bosnia and Herzegovina,Possession Control,Counter-Attack,0.42,0.166,0.414,False,delta_avg_xg_ratio,,,0.58
+B,Qatar,Switzerland,Deep Block,Possession Control,0.103,0.216,0.681,False,delta_matches_played,,,0.897
+B,Canada,Qatar,Possession Control,Deep Block,0.531,0.256,0.213,True,delta_avg_ppda,"Qatar's defensive shape neutralises Canada's pressing advantage (PPDA SHAP toward upset). ""Deep defensive block creates upset conditions""",22.0,0.469
+B,Bosnia and Herzegovina,Switzerland,Counter-Attack,Possession Control,0.336,0.223,0.44,False,delta_matches_played,,,0.664
+B,Canada,Switzerland,Possession Control,Possession Control,0.123,0.371,0.506,False,delta_matches_played,,,0.877
+B,Bosnia and Herzegovina,Qatar,Counter-Attack,Deep Block,0.567,0.231,0.202,False,delta_avg_xg_created_p90,,,0.433
+C,Brazil,Morocco,High Press,Deep Block,0.458,0.232,0.31,True,delta_avg_ppda,"Morocco's defensive shape neutralises Brazil's pressing advantage (PPDA SHAP toward upset). High Press vs Deep Block matchup is draw-prone — structural disadvantage for favourite. ""High Press pressed into stalemate""",13.0,0.542
+C,Haiti,Scotland,Counter-Attack,Deep Block,0.722,0.174,0.103,False,delta_avg_progressive_carry_pct,,,0.278
+C,Brazil,Haiti,High Press,Counter-Attack,0.537,0.17,0.293,True,delta_avg_ppda,"High Press vs Counter-Attack matchup is upset-prone — structural disadvantage for favourite. ""High Press pressed into stalemate""",23.0,0.463
+C,Morocco,Scotland,Deep Block,Deep Block,0.42,0.166,0.414,True,delta_avg_ppda,"Deep Block vs Deep Block matchup is historically variable — structural disadvantage for favourite. ""Deep defensive block creates upset conditions""",7.0,0.58
+C,Brazil,Scotland,High Press,Deep Block,0.722,0.174,0.103,False,delta_avg_xg_created_p90,,,0.278
+C,Haiti,Morocco,Counter-Attack,Deep Block,0.407,0.206,0.386,False,delta_matches_played,,,0.593
+D,United States,Paraguay,Possession Control,Deep Block,0.458,0.232,0.31,True,delta_avg_ppda,"Paraguay's defensive shape neutralises United States's pressing advantage (PPDA SHAP toward upset). ""Deep defensive block creates upset conditions""",14.0,0.542
+D,Australia,Turkey,Deep Block,Possession Control,0.42,0.166,0.414,True,delta_matches_played,"Turkey's defensive shape neutralises Australia's pressing advantage (PPDA SHAP toward upset). Deep Block vs Possession Control matchup is historically variable — structural disadvantage for favourite. ""Deep defensive block creates upset conditions""",8.0,0.58
+D,United States,Australia,Possession Control,Deep Block,0.407,0.206,0.387,True,delta_avg_ppda,"Australia's defensive shape neutralises United States's pressing advantage (PPDA SHAP toward upset). Australia has a set-piece dependency edge — dead-ball moments can flip the game. ""Deep defensive block creates upset conditions""",3.0,0.593
+D,Paraguay,Turkey,Deep Block,Possession Control,0.338,0.225,0.437,False,delta_matches_played,,,0.662
+D,United States,Turkey,Possession Control,Possession Control,0.407,0.206,0.387,False,delta_matches_played,,,0.593
+D,Paraguay,Australia,Deep Block,Deep Block,0.354,0.183,0.463,False,delta_matches_played,,,0.646
+E,Germany,Curacao,High Press,Counter-Attack,0.464,0.341,0.195,True,delta_avg_possession_pct,"Curacao's defensive shape neutralises Germany's pressing advantage (PPDA SHAP toward upset). Curacao has a set-piece dependency edge — dead-ball moments can flip the game. High Press vs Counter-Attack matchup is upset-prone — structural disadvantage for favourite. ""High Press pressed into stalemate""",18.0,0.536
+E,Ivory Coast,Ecuador,Counter-Attack,High Press,0.407,0.206,0.387,False,delta_avg_xg_ratio,,,0.593
+E,Germany,Ivory Coast,High Press,Counter-Attack,0.464,0.341,0.195,True,delta_avg_possession_pct,"Ivory Coast's defensive shape neutralises Germany's pressing advantage (PPDA SHAP toward upset). Ivory Coast has a set-piece dependency edge — dead-ball moments can flip the game. High Press vs Counter-Attack matchup is upset-prone — structural disadvantage for favourite. ""High Press pressed into stalemate""",19.0,0.536
+E,Curacao,Ecuador,Counter-Attack,High Press,0.407,0.206,0.387,False,delta_avg_xg_ratio,,,0.593
+E,Germany,Ecuador,High Press,High Press,0.688,0.213,0.098,False,delta_avg_progressive_carry_pct,,,0.312
+E,Curacao,Ivory Coast,Counter-Attack,Counter-Attack,0.401,0.203,0.396,False,delta_matches_played,,,0.599
+F,Netherlands,Japan,Possession Control,Deep Block,0.458,0.232,0.31,False,delta_matches_played,,,0.542
+F,Sweden,Tunisia,Counter-Attack,Possession Control,0.458,0.232,0.31,True,delta_avg_ppda,"Tunisia's defensive shape neutralises Sweden's pressing advantage (PPDA SHAP toward upset). ""Deep defensive block creates upset conditions""",15.0,0.542
+F,Netherlands,Sweden,Possession Control,Counter-Attack,0.468,0.185,0.347,False,delta_matches_played,,,0.532
+F,Japan,Tunisia,Deep Block,Possession Control,0.401,0.203,0.396,True,delta_avg_ppda,"Tunisia's defensive shape neutralises Japan's pressing advantage (PPDA SHAP toward upset). Deep Block vs Possession Control matchup is historically variable — structural disadvantage for favourite. ""Deep defensive block creates upset conditions""",1.0,0.599
+F,Netherlands,Tunisia,Possession Control,Possession Control,0.458,0.232,0.31,True,delta_avg_xg_ratio,"Tunisia's defensive shape neutralises Netherlands's pressing advantage (PPDA SHAP toward upset). ""Deep defensive block creates upset conditions""",16.0,0.542
+F,Japan,Sweden,Deep Block,Counter-Attack,0.418,0.165,0.417,True,delta_avg_ppda,"Deep Block vs Counter-Attack matchup is historically variable — structural disadvantage for favourite. ""Counter-Attack counter-attack threat is real""",5.0,0.582
+G,Belgium,Egypt,Possession Control,Deep Block,0.688,0.213,0.098,False,delta_matches_played,,,0.312
+G,Iran,New Zealand,Counter-Attack,Deep Block,0.468,0.185,0.347,False,delta_matches_played,,,0.532
+G,Belgium,Iran,Possession Control,Counter-Attack,0.627,0.255,0.118,False,delta_matches_played,,,0.373
+G,Egypt,New Zealand,Deep Block,Deep Block,0.399,0.202,0.399,False,delta_avg_xg_created_p90,,,0.601
+G,Belgium,New Zealand,Possession Control,Deep Block,0.558,0.242,0.2,False,delta_matches_played,,,0.442
+G,Egypt,Iran,Deep Block,Counter-Attack,0.263,0.166,0.571,False,delta_avg_xg_ratio,,,0.737
+H,Spain,Cape Verde,High Press,Counter-Attack,0.416,0.487,0.097,True,delta_avg_possession_pct,"Cape Verde's defensive shape neutralises Spain's pressing advantage (PPDA SHAP toward upset). High Press vs Counter-Attack matchup is upset-prone — structural disadvantage for favourite. ""High Press pressed into stalemate""",4.0,0.584
+H,Saudi Arabia,Uruguay,Possession Control,Possession Control,0.336,0.223,0.44,False,delta_avg_xg_ratio,,,0.664
+H,Spain,Saudi Arabia,High Press,Possession Control,0.688,0.213,0.098,False,delta_matches_played,,,0.312
+H,Cape Verde,Uruguay,Counter-Attack,Possession Control,0.354,0.183,0.463,False,delta_avg_xg_ratio,,,0.646
+H,Spain,Uruguay,High Press,Possession Control,0.508,0.373,0.119,True,delta_matches_played,"Uruguay's defensive shape neutralises Spain's pressing advantage (PPDA SHAP toward upset). High Press vs Possession Control matchup is historically variable — structural disadvantage for favourite. ""High Press pressed into stalemate""",21.0,0.492
+H,Cape Verde,Saudi Arabia,Counter-Attack,Possession Control,0.445,0.226,0.329,True,delta_avg_ppda,"Saudi Arabia's defensive shape neutralises Cape Verde's pressing advantage (PPDA SHAP toward upset). ""Deep defensive block creates upset conditions""",9.0,0.555
+I,France,Senegal,Possession Control,Counter-Attack,0.722,0.174,0.103,False,delta_matches_played,,,0.278
+I,Iraq,Norway,Deep Block,Counter-Attack,0.293,0.238,0.469,False,delta_avg_xg_ratio,,,0.707
+I,France,Iraq,Possession Control,Deep Block,0.722,0.174,0.103,False,delta_matches_played,,,0.278
+I,Senegal,Norway,Counter-Attack,Counter-Attack,0.407,0.206,0.387,False,delta_matches_played,,,0.593
+I,France,Norway,Possession Control,Counter-Attack,0.722,0.174,0.103,False,delta_matches_played,,,0.278
+I,Iraq,Senegal,Deep Block,Counter-Attack,0.263,0.166,0.571,False,delta_avg_xg_ratio,,,0.737
+J,Argentina,Algeria,High Press,Counter-Attack,0.573,0.234,0.194,False,delta_avg_xg_created_p90,,,0.427
+J,Austria,Jordan,Possession Control,Deep Block,0.458,0.232,0.31,True,delta_avg_ppda,"Jordan's defensive shape neutralises Austria's pressing advantage (PPDA SHAP toward upset). ""Deep defensive block creates upset conditions""",17.0,0.542
+J,Argentina,Austria,High Press,Possession Control,0.722,0.174,0.103,False,delta_avg_xg_created_p90,,,0.278
+J,Algeria,Jordan,Counter-Attack,Deep Block,0.445,0.226,0.329,True,delta_avg_ppda,"Jordan's defensive shape neutralises Algeria's pressing advantage (PPDA SHAP toward upset). ""Deep defensive block creates upset conditions""",10.0,0.555
+J,Argentina,Jordan,High Press,Deep Block,0.667,0.161,0.172,False,delta_avg_xg_created_p90,,,0.333
+J,Algeria,Austria,Counter-Attack,Possession Control,0.401,0.203,0.396,True,delta_avg_ppda,"Austria's defensive shape neutralises Algeria's pressing advantage (PPDA SHAP toward upset). ""Deep defensive block creates upset conditions""",2.0,0.599
+K,Portugal,Congo DR,Possession Control,Counter-Attack,0.667,0.161,0.172,False,delta_avg_xg_created_p90,,,0.333
+K,Uzbekistan,Colombia,Deep Block,Possession Control,0.293,0.238,0.469,False,delta_avg_xg_created_p90,,,0.707
+K,Portugal,Uzbekistan,Possession Control,Deep Block,0.573,0.234,0.194,False,delta_avg_xg_created_p90,,,0.427
+K,Congo DR,Colombia,Counter-Attack,Possession Control,0.336,0.223,0.44,False,delta_avg_xg_created_p90,,,0.664
+K,Portugal,Colombia,Possession Control,Possession Control,0.573,0.234,0.194,False,delta_matches_played,,,0.427
+K,Congo DR,Uzbekistan,Counter-Attack,Deep Block,0.445,0.226,0.329,True,delta_avg_ppda,"Uzbekistan's defensive shape neutralises Congo DR's pressing advantage (PPDA SHAP toward upset). ""Deep defensive block creates upset conditions""",11.0,0.555
+L,England,Croatia,Possession Control,Possession Control,0.445,0.226,0.329,False,delta_matches_played,,,0.555
+L,Ghana,Panama,Deep Block,Deep Block,0.418,0.165,0.417,True,delta_matches_played,"Panama has a set-piece dependency edge — dead-ball moments can flip the game. Deep Block vs Deep Block matchup is historically variable — structural disadvantage for favourite. ""Deep defensive block creates upset conditions""",6.0,0.582
+L,England,Ghana,Possession Control,Deep Block,0.722,0.174,0.103,False,delta_avg_xg_created_p90,,,0.278
+L,Croatia,Panama,Possession Control,Deep Block,0.627,0.255,0.118,False,delta_matches_played,,,0.373
+L,England,Panama,Possession Control,Deep Block,0.722,0.174,0.103,False,delta_matches_played,,,0.278
+L,Croatia,Ghana,Possession Control,Deep Block,0.688,0.213,0.098,False,delta_matches_played,,,0.312

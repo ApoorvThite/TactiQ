@@ -1,0 +1,342 @@
+[
+  {
+    "team_name": "Mexico",
+    "group": "A",
+    "db_name": "Mexico",
+    "team_id": 794,
+    "archetype_name": "Possession Control",
+    "matches_played": 7,
+    "status": "IN_DB",
+    "stale": false
+  },
+  {
+    "team_name": "South Korea",
+    "group": "A",
+    "db_name": "South Korea",
+    "team_id": 791,
+    "archetype_name": "Deep Block",
+    "matches_played": 7,
+    "status": "IN_DB",
+    "stale": false
+  },
+  {
+    "team_name": "Czech Republic",
+    "group": "A",
+    "db_name": "Czech Republic",
+    "team_id": 912,
+    "archetype_name": "Counter-Attack",
+    "matches_played": 8,
+    "status": "IN_DB",
+    "stale": false
+  },
+  {
+    "team_name": "Canada",
+    "group": "B",
+    "db_name": "Canada",
+    "team_id": 1833,
+    "archetype_name": "Possession Control",
+    "matches_played": 3,
+    "status": "IN_DB",
+    "stale": false
+  },
+  {
+    "team_name": "Qatar",
+    "group": "B",
+    "db_name": "Qatar",
+    "team_id": 3566,
+    "archetype_name": "Deep Block",
+    "matches_played": 3,
+    "status": "IN_DB",
+    "stale": false
+  },
+  {
+    "team_name": "Switzerland",
+    "group": "B",
+    "db_name": "Switzerland",
+    "team_id": 773,
+    "archetype_name": "Possession Control",
+    "matches_played": 18,
+    "status": "IN_DB",
+    "stale": false
+  },
+  {
+    "team_name": "Brazil",
+    "group": "C",
+    "db_name": "Brazil",
+    "team_id": 781,
+    "archetype_name": "High Press",
+    "matches_played": 10,
+    "status": "IN_DB",
+    "stale": false
+  },
+  {
+    "team_name": "Morocco",
+    "group": "C",
+    "db_name": "Morocco",
+    "team_id": 788,
+    "archetype_name": "Deep Block",
+    "matches_played": 10,
+    "status": "IN_DB",
+    "stale": false
+  },
+  {
+    "team_name": "Scotland",
+    "group": "C",
+    "db_name": "Scotland",
+    "team_id": 942,
+    "archetype_name": "Deep Block",
+    "matches_played": 6,
+    "status": "IN_DB",
+    "stale": false
+  },
+  {
+    "team_name": "United States",
+    "group": "D",
+    "db_name": "United States",
+    "team_id": 1839,
+    "archetype_name": "Possession Control",
+    "matches_played": 4,
+    "status": "IN_DB",
+    "stale": false
+  },
+  {
+    "team_name": "Australia",
+    "group": "D",
+    "db_name": "Australia",
+    "team_id": 792,
+    "archetype_name": "Deep Block",
+    "matches_played": 7,
+    "status": "IN_DB",
+    "stale": false
+  },
+  {
+    "team_name": "Turkey",
+    "group": "D",
+    "db_name": "Turkey",
+    "team_id": 909,
+    "archetype_name": "Possession Control",
+    "matches_played": 8,
+    "status": "IN_DB",
+    "stale": false
+  },
+  {
+    "team_name": "Germany",
+    "group": "E",
+    "db_name": "Germany",
+    "team_id": 770,
+    "archetype_name": "High Press",
+    "matches_played": 15,
+    "status": "IN_DB",
+    "stale": false
+  },
+  {
+    "team_name": "Ecuador",
+    "group": "E",
+    "db_name": "Ecuador",
+    "team_id": 3565,
+    "archetype_name": "High Press",
+    "matches_played": 3,
+    "status": "IN_DB",
+    "stale": false
+  },
+  {
+    "team_name": "Netherlands",
+    "group": "F",
+    "db_name": "Netherlands",
+    "team_id": 941,
+    "archetype_name": "Possession Control",
+    "matches_played": 15,
+    "status": "IN_DB",
+    "stale": false
+  },
+  {
+    "team_name": "Japan",
+    "group": "F",
+    "db_name": "Japan",
+    "team_id": 778,
+    "archetype_name": "Deep Block",
+    "matches_played": 8,
+    "status": "IN_DB",
+    "stale": false
+  },
+  {
+    "team_name": "Sweden",
+    "group": "F",
+    "db_name": "Sweden",
+    "team_id": 790,
+    "archetype_name": "Counter-Attack",
+    "matches_played": 9,
+    "status": "IN_DB",
+    "stale": false
+  },
+  {
+    "team_name": "Tunisia",
+    "group": "F",
+    "db_name": "Tunisia",
+    "team_id": 777,
+    "archetype_name": "Possession Control",
+    "matches_played": 6,
+    "status": "IN_DB",
+    "stale": false
+  },
+  {
+    "team_name": "Belgium",
+    "group": "G",
+    "db_name": "Belgium",
+    "team_id": 782,
+    "archetype_name": "Possession Control",
+    "matches_played": 19,
+    "status": "IN_DB",
+    "stale": false
+  },
+  {
+    "team_name": "Egypt",
+    "group": "G",
+    "db_name": "Egypt",
+    "team_id": 774,
+    "archetype_name": "Deep Block",
+    "matches_played": 3,
+    "status": "IN_DB",
+    "stale": false
+  },
+  {
+    "team_name": "Iran",
+    "group": "G",
+    "db_name": "Iran",
+    "team_id": 797,
+    "archetype_name": "Counter-Attack",
+    "matches_played": 6,
+    "status": "IN_DB",
+    "stale": false
+  },
+  {
+    "team_name": "Spain",
+    "group": "H",
+    "db_name": "Spain",
+    "team_id": 772,
+    "archetype_name": "High Press",
+    "matches_played": 21,
+    "status": "IN_DB",
+    "stale": false
+  },
+  {
+    "team_name": "Saudi Arabia",
+    "group": "H",
+    "db_name": "Saudi Arabia",
+    "team_id": 799,
+    "archetype_name": "Possession Control",
+    "matches_played": 6,
+    "status": "IN_DB",
+    "stale": false
+  },
+  {
+    "team_name": "Uruguay",
+    "group": "H",
+    "db_name": "Uruguay",
+    "team_id": 783,
+    "archetype_name": "Possession Control",
+    "matches_played": 8,
+    "status": "IN_DB",
+    "stale": false
+  },
+  {
+    "team_name": "France",
+    "group": "I",
+    "db_name": "France",
+    "team_id": 771,
+    "archetype_name": "Possession Control",
+    "matches_played": 24,
+    "status": "IN_DB",
+    "stale": false
+  },
+  {
+    "team_name": "Senegal",
+    "group": "I",
+    "db_name": "Senegal",
+    "team_id": 787,
+    "archetype_name": "Counter-Attack",
+    "matches_played": 7,
+    "status": "IN_DB",
+    "stale": false
+  },
+  {
+    "team_name": "Argentina",
+    "group": "J",
+    "db_name": "Argentina",
+    "team_id": 779,
+    "archetype_name": "High Press",
+    "matches_played": 11,
+    "status": "IN_DB",
+    "stale": false
+  },
+  {
+    "team_name": "Austria",
+    "group": "J",
+    "db_name": "Austria",
+    "team_id": 915,
+    "archetype_name": "Possession Control",
+    "matches_played": 8,
+    "status": "IN_DB",
+    "stale": false
+  },
+  {
+    "team_name": "Portugal",
+    "group": "K",
+    "db_name": "Portugal",
+    "team_id": 780,
+    "archetype_name": "Possession Control",
+    "matches_played": 18,
+    "status": "IN_DB",
+    "stale": false
+  },
+  {
+    "team_name": "Colombia",
+    "group": "K",
+    "db_name": "Colombia",
+    "team_id": 769,
+    "archetype_name": "Possession Control",
+    "matches_played": 4,
+    "status": "IN_DB",
+    "stale": false
+  },
+  {
+    "team_name": "England",
+    "group": "L",
+    "db_name": "England",
+    "team_id": 768,
+    "archetype_name": "Possession Control",
+    "matches_played": 26,
+    "status": "IN_DB",
+    "stale": false
+  },
+  {
+    "team_name": "Croatia",
+    "group": "L",
+    "db_name": "Croatia",
+    "team_id": 785,
+    "archetype_name": "Possession Control",
+    "matches_played": 21,
+    "status": "IN_DB",
+    "stale": false
+  },
+  {
+    "team_name": "Ghana",
+    "group": "L",
+    "db_name": "Ghana",
+    "team_id": 4885,
+    "archetype_name": "Deep Block",
+    "matches_played": 3,
+    "status": "IN_DB",
+    "stale": false
+  },
+  {
+    "team_name": "Panama",
+    "group": "L",
+    "db_name": "Panama",
+    "team_id": 798,
+    "archetype_name": "Deep Block",
+    "matches_played": 3,
+    "status": "IN_DB",
+    "stale": false
+  }
+]

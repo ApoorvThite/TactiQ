@@ -1,0 +1,354 @@
+{
+  "R32": [
+    {
+      "team_a": "Czech Republic",
+      "team_b": "Canada",
+      "p_a_advances": 0.5002,
+      "p_b_advances": 0.4998,
+      "predicted_winner": "Czech Republic",
+      "winner_archetype": "Counter-Attack",
+      "p_win_raw": 0.399,
+      "p_draw_raw": 0.2022,
+      "p_loss_raw": 0.3987
+    },
+    {
+      "team_a": "Switzerland",
+      "team_b": "Mexico",
+      "p_a_advances": 0.866,
+      "p_b_advances": 0.134,
+      "predicted_winner": "Switzerland",
+      "winner_archetype": "Possession Control",
+      "p_win_raw": 0.5609,
+      "p_draw_raw": 0.3523,
+      "p_loss_raw": 0.0868
+    },
+    {
+      "team_a": "Brazil",
+      "team_b": "Turkey",
+      "p_a_advances": 0.7955,
+      "p_b_advances": 0.2045,
+      "predicted_winner": "Brazil",
+      "winner_archetype": "High Press",
+      "p_win_raw": 0.6672,
+      "p_draw_raw": 0.1612,
+      "p_loss_raw": 0.1716
+    },
+    {
+      "team_a": "United States",
+      "team_b": "Morocco",
+      "p_a_advances": 0.4331,
+      "p_b_advances": 0.5669,
+      "predicted_winner": "Morocco",
+      "winner_archetype": "Deep Block",
+      "p_win_raw": 0.3363,
+      "p_draw_raw": 0.2233,
+      "p_loss_raw": 0.4403
+    },
+    {
+      "team_a": "Germany",
+      "team_b": "Sweden",
+      "p_a_advances": 0.7042,
+      "p_b_advances": 0.2958,
+      "predicted_winner": "Germany",
+      "winner_archetype": "High Press",
+      "p_win_raw": 0.4642,
+      "p_draw_raw": 0.3408,
+      "p_loss_raw": 0.195
+    },
+    {
+      "team_a": "Netherlands",
+      "team_b": "Ecuador",
+      "p_a_advances": 0.8106,
+      "p_b_advances": 0.1894,
+      "predicted_winner": "Netherlands",
+      "winner_archetype": "Possession Control",
+      "p_win_raw": 0.5082,
+      "p_draw_raw": 0.373,
+      "p_loss_raw": 0.1188
+    },
+    {
+      "team_a": "Belgium",
+      "team_b": "Uruguay",
+      "p_a_advances": 0.7042,
+      "p_b_advances": 0.2958,
+      "predicted_winner": "Belgium",
+      "winner_archetype": "Possession Control",
+      "p_win_raw": 0.4642,
+      "p_draw_raw": 0.3408,
+      "p_loss_raw": 0.195
+    },
+    {
+      "team_a": "Spain",
+      "team_b": "Iran",
+      "p_a_advances": 0.8195,
+      "p_b_advances": 0.1805,
+      "predicted_winner": "Spain",
+      "winner_archetype": "High Press",
+      "p_win_raw": 0.523,
+      "p_draw_raw": 0.3618,
+      "p_loss_raw": 0.1152
+    },
+    {
+      "team_a": "France",
+      "team_b": "Austria",
+      "p_a_advances": 1.0,
+      "p_b_advances": 0.0,
+      "predicted_winner": "France",
+      "winner_archetype": "Possession Control",
+      "p_win_raw": 0.8054,
+      "p_draw_raw": 0.1946,
+      "p_loss_raw": 0.0
+    },
+    {
+      "team_a": "Argentina",
+      "team_b": "Senegal",
+      "p_a_advances": 0.7955,
+      "p_b_advances": 0.2045,
+      "predicted_winner": "Argentina",
+      "winner_archetype": "High Press",
+      "p_win_raw": 0.6672,
+      "p_draw_raw": 0.1612,
+      "p_loss_raw": 0.1716
+    },
+    {
+      "team_a": "Portugal",
+      "team_b": "Croatia",
+      "p_a_advances": 0.5296,
+      "p_b_advances": 0.4704,
+      "predicted_winner": "Portugal",
+      "winner_archetype": "Possession Control",
+      "p_win_raw": 0.4175,
+      "p_draw_raw": 0.2116,
+      "p_loss_raw": 0.3708
+    },
+    {
+      "team_a": "England",
+      "team_b": "Colombia",
+      "p_a_advances": 0.8418,
+      "p_b_advances": 0.1582,
+      "predicted_winner": "England",
+      "winner_archetype": "Possession Control",
+      "p_win_raw": 0.6267,
+      "p_draw_raw": 0.2555,
+      "p_loss_raw": 0.1178
+    },
+    {
+      "team_a": "Haiti",
+      "team_b": "Panama",
+      "p_a_advances": 0.5296,
+      "p_b_advances": 0.4704,
+      "predicted_winner": "Haiti",
+      "winner_archetype": "Deep Block",
+      "p_win_raw": 0.4175,
+      "p_draw_raw": 0.2116,
+      "p_loss_raw": 0.3708
+    },
+    {
+      "team_a": "Ghana",
+      "team_b": "Norway",
+      "p_a_advances": 0.385,
+      "p_b_advances": 0.615,
+      "predicted_winner": "Norway",
+      "winner_archetype": "Deep Block",
+      "p_win_raw": 0.3097,
+      "p_draw_raw": 0.1955,
+      "p_loss_raw": 0.4948
+    },
+    {
+      "team_a": "Bosnia and Herzegovina",
+      "team_b": "New Zealand",
+      "p_a_advances": 0.5046,
+      "p_b_advances": 0.4954,
+      "predicted_winner": "Bosnia and Herzegovina",
+      "winner_archetype": "Deep Block",
+      "p_win_raw": 0.4208,
+      "p_draw_raw": 0.1661,
+      "p_loss_raw": 0.4131
+    },
+    {
+      "team_a": "Uzbekistan",
+      "team_b": "Ecuador",
+      "p_a_advances": 0.385,
+      "p_b_advances": 0.615,
+      "predicted_winner": "Ecuador",
+      "winner_archetype": "High Press",
+      "p_win_raw": 0.2934,
+      "p_draw_raw": 0.2378,
+      "p_loss_raw": 0.4688
+    }
+  ],
+  "R16": [
+    {
+      "team_a": "Czech Republic",
+      "team_b": "Switzerland",
+      "p_a_advances": 0.2378,
+      "p_b_advances": 0.7622,
+      "predicted_winner": "Switzerland",
+      "winner_archetype": "Possession Control",
+      "p_win_raw": 0.1916,
+      "p_draw_raw": 0.1943,
+      "p_loss_raw": 0.6141
+    },
+    {
+      "team_a": "Brazil",
+      "team_b": "Morocco",
+      "p_a_advances": 0.5958,
+      "p_b_advances": 0.4042,
+      "predicted_winner": "Brazil",
+      "winner_archetype": "High Press",
+      "p_win_raw": 0.4576,
+      "p_draw_raw": 0.2319,
+      "p_loss_raw": 0.3105
+    },
+    {
+      "team_a": "Germany",
+      "team_b": "Netherlands",
+      "p_a_advances": 0.5958,
+      "p_b_advances": 0.4042,
+      "predicted_winner": "Germany",
+      "winner_archetype": "High Press",
+      "p_win_raw": 0.4576,
+      "p_draw_raw": 0.2319,
+      "p_loss_raw": 0.3105
+    },
+    {
+      "team_a": "Belgium",
+      "team_b": "Spain",
+      "p_a_advances": 0.3333,
+      "p_b_advances": 0.6667,
+      "predicted_winner": "Spain",
+      "winner_archetype": "High Press",
+      "p_win_raw": 0.2491,
+      "p_draw_raw": 0.2527,
+      "p_loss_raw": 0.4982
+    },
+    {
+      "team_a": "France",
+      "team_b": "Argentina",
+      "p_a_advances": 0.645,
+      "p_b_advances": 0.355,
+      "predicted_winner": "France",
+      "winner_archetype": "Possession Control",
+      "p_win_raw": 0.3328,
+      "p_draw_raw": 0.4841,
+      "p_loss_raw": 0.1832
+    },
+    {
+      "team_a": "Portugal",
+      "team_b": "England",
+      "p_a_advances": 0.5747,
+      "p_b_advances": 0.4253,
+      "predicted_winner": "Portugal",
+      "winner_archetype": "Possession Control",
+      "p_win_raw": 0.4451,
+      "p_draw_raw": 0.2256,
+      "p_loss_raw": 0.3294
+    },
+    {
+      "team_a": "Haiti",
+      "team_b": "Norway",
+      "p_a_advances": 0.4331,
+      "p_b_advances": 0.5669,
+      "predicted_winner": "Norway",
+      "winner_archetype": "Deep Block",
+      "p_win_raw": 0.3363,
+      "p_draw_raw": 0.2233,
+      "p_loss_raw": 0.4403
+    },
+    {
+      "team_a": "Bosnia and Herzegovina",
+      "team_b": "Ecuador",
+      "p_a_advances": 0.4361,
+      "p_b_advances": 0.5639,
+      "predicted_winner": "Ecuador",
+      "winner_archetype": "High Press",
+      "p_win_raw": 0.3382,
+      "p_draw_raw": 0.2246,
+      "p_loss_raw": 0.4372
+    }
+  ],
+  "QF": [
+    {
+      "team_a": "Switzerland",
+      "team_b": "Brazil",
+      "p_a_advances": 0.385,
+      "p_b_advances": 0.615,
+      "predicted_winner": "Brazil",
+      "winner_archetype": "High Press",
+      "p_win_raw": 0.2934,
+      "p_draw_raw": 0.2378,
+      "p_loss_raw": 0.4688
+    },
+    {
+      "team_a": "Germany",
+      "team_b": "Spain",
+      "p_a_advances": 0.3333,
+      "p_b_advances": 0.6667,
+      "predicted_winner": "Spain",
+      "winner_archetype": "High Press",
+      "p_win_raw": 0.2491,
+      "p_draw_raw": 0.2527,
+      "p_loss_raw": 0.4982
+    },
+    {
+      "team_a": "France",
+      "team_b": "Portugal",
+      "p_a_advances": 0.5077,
+      "p_b_advances": 0.4923,
+      "predicted_winner": "France",
+      "winner_archetype": "Possession Control",
+      "p_win_raw": 0.3411,
+      "p_draw_raw": 0.3281,
+      "p_loss_raw": 0.3308
+    },
+    {
+      "team_a": "Norway",
+      "team_b": "Ecuador",
+      "p_a_advances": 0.4361,
+      "p_b_advances": 0.5639,
+      "predicted_winner": "Ecuador",
+      "winner_archetype": "High Press",
+      "p_win_raw": 0.3382,
+      "p_draw_raw": 0.2246,
+      "p_loss_raw": 0.4372
+    }
+  ],
+  "SF": [
+    {
+      "team_a": "Brazil",
+      "team_b": "Spain",
+      "p_a_advances": 0.3361,
+      "p_b_advances": 0.6639,
+      "predicted_winner": "Spain",
+      "winner_archetype": "High Press",
+      "p_win_raw": 0.225,
+      "p_draw_raw": 0.3306,
+      "p_loss_raw": 0.4444
+    },
+    {
+      "team_a": "France",
+      "team_b": "Ecuador",
+      "p_a_advances": 0.8749,
+      "p_b_advances": 0.1251,
+      "predicted_winner": "France",
+      "winner_archetype": "Possession Control",
+      "p_win_raw": 0.6881,
+      "p_draw_raw": 0.2135,
+      "p_loss_raw": 0.0984
+    }
+  ],
+  "Final": [
+    {
+      "team_a": "Spain",
+      "team_b": "France",
+      "p_a_advances": 0.5958,
+      "p_b_advances": 0.4042,
+      "predicted_winner": "Spain",
+      "winner_archetype": "High Press",
+      "p_win_raw": 0.4576,
+      "p_draw_raw": 0.2319,
+      "p_loss_raw": 0.3105
+    }
+  ],
+  "Champion": "Spain"
+}

@@ -1,0 +1,114 @@
+[
+  {
+    "team_name": "South Africa",
+    "group": "A",
+    "db_name": null,
+    "team_id": null,
+    "status": "MISSING",
+    "stale": false
+  },
+  {
+    "team_name": "Bosnia and Herzegovina",
+    "group": "B",
+    "db_name": null,
+    "team_id": null,
+    "status": "MISSING",
+    "stale": false
+  },
+  {
+    "team_name": "Haiti",
+    "group": "C",
+    "db_name": null,
+    "team_id": null,
+    "status": "MISSING",
+    "stale": false
+  },
+  {
+    "team_name": "Paraguay",
+    "group": "D",
+    "db_name": null,
+    "team_id": null,
+    "status": "MISSING",
+    "stale": false
+  },
+  {
+    "team_name": "Curacao",
+    "group": "E",
+    "db_name": null,
+    "team_id": null,
+    "status": "MISSING",
+    "stale": false
+  },
+  {
+    "team_name": "Ivory Coast",
+    "group": "E",
+    "db_name": null,
+    "team_id": null,
+    "status": "MISSING",
+    "stale": false
+  },
+  {
+    "team_name": "New Zealand",
+    "group": "G",
+    "db_name": null,
+    "team_id": null,
+    "status": "MISSING",
+    "stale": false
+  },
+  {
+    "team_name": "Cape Verde",
+    "group": "H",
+    "db_name": null,
+    "team_id": null,
+    "status": "MISSING",
+    "stale": false
+  },
+  {
+    "team_name": "Iraq",
+    "group": "I",
+    "db_name": null,
+    "team_id": null,
+    "status": "MISSING",
+    "stale": false
+  },
+  {
+    "team_name": "Norway",
+    "group": "I",
+    "db_name": null,
+    "team_id": null,
+    "status": "MISSING",
+    "stale": false
+  },
+  {
+    "team_name": "Algeria",
+    "group": "J",
+    "db_name": null,
+    "team_id": null,
+    "status": "MISSING",
+    "stale": false
+  },
+  {
+    "team_name": "Jordan",
+    "group": "J",
+    "db_name": null,
+    "team_id": null,
+    "status": "MISSING",
+    "stale": false
+  },
+  {
+    "team_name": "Congo DR",
+    "group": "K",
+    "db_name": null,
+    "team_id": null,
+    "status": "MISSING",
+    "stale": false
+  },
+  {
+    "team_name": "Uzbekistan",
+    "group": "K",
+    "db_name": null,
+    "team_id": null,
+    "status": "MISSING",
+    "stale": false
+  }
+]

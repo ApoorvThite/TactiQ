@@ -1,0 +1,73 @@
+group,team_a_name,team_b_name,team_a_archetype,team_b_archetype,team_a_is_proxy,team_b_is_proxy,predicted_class,p_win,p_draw,p_loss,top_shap_feature_win,top_shap_feature_draw,is_upset_candidate,upset_explanation
+A,Mexico,South Africa,Possession Control,Deep Block,False,True,win,0.5577,0.2419,0.2005,delta_avg_progressive_carry_pct,delta_avg_ppda,False,
+A,South Korea,Czech Republic,Deep Block,Counter-Attack,False,False,loss,0.2934,0.2378,0.4688,delta_avg_xg_ratio,delta_avg_ppda,False,
+A,Mexico,South Korea,Possession Control,Deep Block,False,False,win,0.4576,0.2319,0.3105,delta_matches_played,delta_avg_ppda,True,South Korea (Deep Block) holds structural edge — Possession Control vs Deep Block matchup; pressing signal (PPDA) points toward upset
+A,South Africa,Czech Republic,Deep Block,Counter-Attack,True,False,loss,0.2114,0.2145,0.5742,delta_avg_xg_ratio,delta_avg_ppda,False,
+A,Mexico,Czech Republic,Possession Control,Counter-Attack,False,False,win,0.401,0.2032,0.3957,delta_avg_xg_ratio,delta_avg_ppda,False,
+A,South Africa,South Korea,Deep Block,Deep Block,True,False,loss,0.2666,0.3128,0.4206,delta_avg_xg_ratio,delta_avg_ppda,False,
+B,Canada,Bosnia and Herzegovina,Possession Control,Deep Block,False,True,win,0.438,0.1729,0.389,delta_matches_played,delta_avg_ppda,False,
+B,Qatar,Switzerland,Deep Block,Possession Control,False,False,loss,0.1033,0.2156,0.6812,delta_matches_played,delta_avg_ppda,False,
+B,Canada,Qatar,Possession Control,Deep Block,False,False,win,0.5309,0.2565,0.2126,delta_avg_xg_created_p90,delta_avg_ppda,True,Qatar (Deep Block) holds structural edge — Possession Control vs Deep Block matchup; pressing signal (PPDA) points toward upset
+B,Bosnia and Herzegovina,Switzerland,Deep Block,Possession Control,True,False,loss,0.1033,0.2156,0.6812,delta_matches_played,delta_avg_ppda,False,
+B,Canada,Switzerland,Possession Control,Possession Control,False,False,loss,0.1229,0.3715,0.5056,delta_matches_played,delta_avg_ppda,False,
+B,Bosnia and Herzegovina,Qatar,Deep Block,Deep Block,True,False,win,0.4576,0.2319,0.3105,delta_avg_xg_created_p90,delta_matches_played,True,Qatar (Deep Block) holds structural edge — Deep Block vs Deep Block matchup; pressing signal (PPDA) points toward upset
+C,Brazil,Morocco,High Press,Deep Block,False,False,win,0.4576,0.2319,0.3105,delta_avg_xg_created_p90,delta_avg_ppda,True,Morocco (Deep Block) holds structural edge — High Press vs Deep Block matchup; pressing signal (PPDA) points toward upset
+C,Haiti,Scotland,Deep Block,Deep Block,True,False,win,0.6036,0.1458,0.2506,delta_avg_xg_created_p90,delta_avg_pass_completion_pct,False,
+C,Brazil,Haiti,High Press,Deep Block,False,True,win,0.5729,0.2335,0.1936,delta_avg_xg_created_p90,delta_matches_played,False,
+C,Morocco,Scotland,Deep Block,Deep Block,False,False,win,0.4199,0.1657,0.4144,delta_matches_played,delta_avg_ppda,False,
+C,Brazil,Scotland,High Press,Deep Block,False,False,win,0.7222,0.1745,0.1033,delta_avg_xg_created_p90,delta_avg_ppda,False,
+C,Haiti,Morocco,Deep Block,Deep Block,True,False,loss,0.1478,0.2868,0.5654,delta_matches_played,delta_avg_ppda,False,
+D,United States,Paraguay,Possession Control,Deep Block,False,True,win,0.4616,0.2302,0.3082,delta_avg_progressive_carry_pct,delta_avg_ppda,True,Paraguay (Deep Block) holds structural edge — Possession Control vs Deep Block matchup; pressing signal (PPDA) points toward upset
+D,Australia,Turkey,Deep Block,Possession Control,False,False,win,0.4199,0.1657,0.4144,delta_avg_xg_ratio,delta_matches_played,True,Turkey (Possession Control) holds structural edge — Deep Block vs Possession Control matchup; pressing signal (PPDA) points toward upset
+D,United States,Australia,Possession Control,Deep Block,False,False,win,0.4068,0.2062,0.3871,delta_avg_progressive_carry_pct,delta_avg_ppda,True,Australia (Deep Block) holds structural edge — Possession Control vs Deep Block matchup; pressing signal (PPDA) points toward upset
+D,Paraguay,Turkey,Deep Block,Possession Control,True,False,loss,0.2666,0.3128,0.4206,delta_matches_played,delta_avg_ppda,False,
+D,United States,Turkey,Possession Control,Possession Control,False,False,win,0.4068,0.2062,0.3871,delta_matches_played,delta_avg_ppda,False,
+D,Paraguay,Australia,Deep Block,Deep Block,True,False,loss,0.3363,0.2233,0.4403,delta_avg_xg_ratio,delta_avg_ppda,False,
+E,Germany,Curacao,High Press,Deep Block,False,True,win,0.5082,0.373,0.1188,delta_matches_played,delta_avg_possession_pct,True,Curacao (Deep Block) holds structural edge — High Press vs Deep Block matchup; pressing signal (PPDA) points toward upset
+E,Ivory Coast,Ecuador,Deep Block,High Press,True,False,loss,0.3382,0.2246,0.4372,delta_avg_xg_ratio,delta_avg_ppda,False,
+E,Germany,Ivory Coast,High Press,Deep Block,False,True,win,0.5082,0.373,0.1188,delta_matches_played,delta_avg_possession_pct,True,Ivory Coast (Deep Block) holds structural edge — High Press vs Deep Block matchup; pressing signal (PPDA) points toward upset
+E,Curacao,Ecuador,Deep Block,High Press,True,False,loss,0.3382,0.2246,0.4372,delta_avg_xg_ratio,delta_avg_ppda,False,
+E,Germany,Ecuador,High Press,High Press,False,False,win,0.6881,0.2135,0.0984,delta_avg_progressive_carry_pct,delta_matches_played,False,
+E,Curacao,Ivory Coast,Deep Block,Deep Block,True,True,loss,0.3363,0.2233,0.4403,delta_matches_played,delta_avg_ppda,False,
+F,Netherlands,Japan,Possession Control,Deep Block,False,False,win,0.4576,0.2319,0.3105,delta_matches_played,delta_avg_ppda,False,
+F,Sweden,Tunisia,Counter-Attack,Possession Control,False,False,win,0.4576,0.2319,0.3105,delta_matches_played,delta_avg_ppda,True,Tunisia (Possession Control) holds structural edge — Counter-Attack vs Possession Control matchup; pressing signal (PPDA) points toward upset
+F,Netherlands,Sweden,Possession Control,Counter-Attack,False,False,win,0.4684,0.1849,0.3467,delta_matches_played,delta_avg_ppda,False,
+F,Japan,Tunisia,Deep Block,Possession Control,False,False,win,0.401,0.2032,0.3957,delta_matches_played,delta_avg_ppda,True,Tunisia (Possession Control) holds structural edge — Deep Block vs Possession Control matchup; pressing signal (PPDA) points toward upset
+F,Netherlands,Tunisia,Possession Control,Possession Control,False,False,win,0.4576,0.2319,0.3105,delta_matches_played,delta_avg_xg_ratio,True,Tunisia (Possession Control) holds structural edge — Possession Control vs Possession Control matchup; pressing signal (PPDA) points toward upset
+F,Japan,Sweden,Deep Block,Counter-Attack,False,False,win,0.4177,0.1649,0.4174,delta_avg_xg_ratio,delta_avg_ppda,False,
+G,Belgium,Egypt,Possession Control,Deep Block,False,False,win,0.6881,0.2135,0.0984,delta_matches_played,delta_avg_ppda,False,
+G,Iran,New Zealand,Counter-Attack,Deep Block,False,True,win,0.4824,0.1904,0.3272,delta_matches_played,delta_avg_ppda,False,
+G,Belgium,Iran,Possession Control,Counter-Attack,False,False,win,0.6267,0.2555,0.1178,delta_matches_played,delta_matches_played,False,
+G,Egypt,New Zealand,Deep Block,Deep Block,False,True,win,0.401,0.2032,0.3957,delta_matches_played,delta_avg_ppda,False,
+G,Belgium,New Zealand,Possession Control,Deep Block,False,True,win,0.6881,0.2135,0.0984,delta_matches_played,delta_avg_ppda,False,
+G,Egypt,Iran,Deep Block,Counter-Attack,False,False,loss,0.2631,0.1661,0.5708,delta_avg_xg_ratio,delta_avg_ppda,False,
+H,Spain,Cape Verde,High Press,Deep Block,False,True,win,0.5082,0.373,0.1188,delta_matches_played,delta_avg_possession_pct,True,Cape Verde (Deep Block) holds structural edge — High Press vs Deep Block matchup; pressing signal (PPDA) points toward upset
+H,Saudi Arabia,Uruguay,Possession Control,Possession Control,False,False,loss,0.3363,0.2233,0.4403,delta_avg_xg_ratio,delta_avg_ppda,False,
+H,Spain,Saudi Arabia,High Press,Possession Control,False,False,win,0.6881,0.2135,0.0984,delta_matches_played,delta_avg_ppda,False,
+H,Cape Verde,Uruguay,Deep Block,Possession Control,True,False,loss,0.2934,0.2378,0.4688,delta_avg_xg_ratio,delta_avg_pass_completion_pct,False,
+H,Spain,Uruguay,High Press,Possession Control,False,False,win,0.5082,0.373,0.1188,delta_avg_xg_created_p90,delta_matches_played,True,Uruguay (Possession Control) holds structural edge — High Press vs Possession Control matchup; pressing signal (PPDA) points toward upset
+H,Cape Verde,Saudi Arabia,Deep Block,Possession Control,True,False,win,0.401,0.2032,0.3957,delta_avg_xg_ratio,delta_avg_ppda,True,Saudi Arabia (Possession Control) holds structural edge — Deep Block vs Possession Control matchup; pressing signal (PPDA) points toward upset
+I,France,Senegal,Possession Control,Counter-Attack,False,False,win,0.7222,0.1745,0.1033,delta_matches_played,delta_avg_ppda,False,
+I,Iraq,Norway,Deep Block,Deep Block,True,True,loss,0.2934,0.2378,0.4688,delta_avg_xg_ratio,delta_avg_ppda,False,
+I,France,Iraq,Possession Control,Deep Block,False,True,win,0.7222,0.1745,0.1033,delta_matches_played,delta_avg_ppda,False,
+I,Senegal,Norway,Counter-Attack,Deep Block,False,True,win,0.4451,0.2256,0.3294,delta_matches_played,delta_avg_ppda,False,
+I,France,Norway,Possession Control,Deep Block,False,True,win,0.7222,0.1745,0.1033,delta_matches_played,delta_avg_ppda,False,
+I,Iraq,Senegal,Deep Block,Counter-Attack,True,False,loss,0.2114,0.2145,0.5742,delta_avg_xg_ratio,delta_avg_ppda,False,
+J,Argentina,Algeria,High Press,Deep Block,False,True,win,0.5623,0.332,0.1057,delta_avg_xg_created_p90,delta_avg_ppda,False,
+J,Austria,Jordan,Possession Control,Deep Block,False,True,win,0.4145,0.3043,0.2812,delta_matches_played,delta_avg_ppda,True,Jordan (Deep Block) holds structural edge — Possession Control vs Deep Block matchup; pressing signal (PPDA) points toward upset
+J,Argentina,Austria,High Press,Possession Control,False,False,win,0.7222,0.1745,0.1033,delta_avg_xg_created_p90,delta_avg_ppda,False,
+J,Algeria,Jordan,Deep Block,Deep Block,True,True,win,0.4208,0.1661,0.4131,delta_matches_played,delta_avg_ppda,True,Jordan (Deep Block) holds structural edge — Deep Block vs Deep Block matchup; pressing signal (PPDA) points toward upset
+J,Argentina,Jordan,High Press,Deep Block,False,True,win,0.6881,0.2135,0.0984,delta_avg_xg_created_p90,delta_matches_played,False,
+J,Algeria,Austria,Deep Block,Possession Control,True,False,loss,0.2934,0.2378,0.4688,delta_avg_xg_ratio,delta_avg_ppda,False,
+K,Portugal,Congo DR,Possession Control,Deep Block,False,True,win,0.7222,0.1745,0.1033,delta_matches_played,delta_avg_ppda,False,
+K,Uzbekistan,Colombia,Deep Block,Possession Control,True,False,loss,0.2491,0.2527,0.4982,delta_avg_xg_created_p90,delta_avg_ppda,False,
+K,Portugal,Uzbekistan,Possession Control,Deep Block,False,True,win,0.6881,0.2135,0.0984,delta_matches_played,delta_avg_ppda,False,
+K,Congo DR,Colombia,Deep Block,Possession Control,True,False,loss,0.3097,0.1955,0.4948,delta_avg_xg_created_p90,delta_avg_set_piece_shot_pct,False,
+K,Portugal,Colombia,Possession Control,Possession Control,False,False,win,0.5729,0.2335,0.1936,delta_matches_played,delta_avg_ppda,False,
+K,Congo DR,Uzbekistan,Deep Block,Deep Block,True,True,win,0.4208,0.1661,0.4131,delta_matches_played,delta_avg_ppda,True,Uzbekistan (Deep Block) holds structural edge — Deep Block vs Deep Block matchup; pressing signal (PPDA) points toward upset
+L,England,Croatia,Possession Control,Possession Control,False,False,win,0.4451,0.2256,0.3294,delta_matches_played,delta_avg_ppda,False,
+L,Ghana,Panama,Deep Block,Deep Block,False,False,win,0.4177,0.1649,0.4174,delta_matches_played,delta_matches_played,True,Panama (Deep Block) holds structural edge — Deep Block vs Deep Block matchup; pressing signal (PPDA) points toward upset
+L,England,Ghana,Possession Control,Deep Block,False,False,win,0.7222,0.1745,0.1033,delta_avg_xg_created_p90,delta_avg_ppda,False,
+L,Croatia,Panama,Possession Control,Deep Block,False,False,win,0.6267,0.2555,0.1178,delta_matches_played,delta_avg_ppda,False,
+L,England,Panama,Possession Control,Deep Block,False,False,win,0.7222,0.1745,0.1033,delta_matches_played,delta_avg_ppda,False,
+L,Croatia,Ghana,Possession Control,Deep Block,False,False,win,0.6881,0.2135,0.0984,delta_matches_played,delta_avg_ppda,False,
