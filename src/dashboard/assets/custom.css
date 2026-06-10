@@ -256,6 +256,14 @@ header    { visibility: hidden; }
     border-radius: 8px !important;
 }
 
+/* ── Sidebar expand button — always visible when sidebar is collapsed ──────── */
+[data-testid="stSidebarCollapsedControl"] {
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+    display: flex !important;
+}
+
 /* ── Info / warning boxes ──────────────────────────────────────────────────── */
 [data-testid="stInfo"] {
     background: rgba(0,212,160,0.06) !important;
