@@ -21,6 +21,17 @@ html, body, [data-testid="stAppViewContainer"] {
 footer    { visibility: hidden; }
 header    { visibility: hidden; }
 
+/* ── Keep sidebar toggle button visible even when header is hidden ─────────── */
+[data-testid="stSidebarCollapsedControl"],
+[data-testid="stSidebarCollapseButton"],
+header [data-testid="stSidebarCollapseButton"],
+section[data-testid="stSidebar"] > div:first-child button {
+    visibility: visible !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    display: flex !important;
+}
+
 /* ── Sidebar ───────────────────────────────────────────────────────────────── */
 [data-testid="stSidebar"] {
     background: #060A12 !important;
@@ -254,14 +265,6 @@ header    { visibility: hidden; }
     background: #0F1520 !important;
     border-color: rgba(255,255,255,0.1) !important;
     border-radius: 8px !important;
-}
-
-/* ── Sidebar expand button — always visible when sidebar is collapsed ──────── */
-[data-testid="stSidebarCollapsedControl"] {
-    opacity: 1 !important;
-    visibility: visible !important;
-    pointer-events: auto !important;
-    display: flex !important;
 }
 
 /* ── Info / warning boxes ──────────────────────────────────────────────────── */
