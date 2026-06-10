@@ -30,23 +30,7 @@ PROCESSED_DIR = ROOT / 'data' / 'processed'
 
 LABEL_MAP    = {'win': 0, 'draw': 1, 'loss': 2}
 
-
-class IsotonicMulticlassCalibrator:
-    """Wraps an XGBClassifier with per-class isotonic regression calibration."""
-    def __init__(self, base_model, calibrators):
-        self.base_model  = base_model
-        self.calibrators = calibrators
-
-    def predict_proba(self, X):
-        raw = self.base_model.predict_proba(X)
-        cal = np.column_stack([
-            self.calibrators[i].predict(raw[:, i]) for i in range(raw.shape[1])
-        ])
-        row_sums = cal.sum(axis=1, keepdims=True)
-        return cal / np.where(row_sums == 0, 1, row_sums)
-
-    def predict(self, X):
-        return self.predict_proba(X).argmax(axis=1)
+from src.models.calibrator import IsotonicMulticlassCalibrator  # noqa: E402
 LABEL_NAMES  = ['win', 'draw', 'loss']
 
 FEATURE_NAMES = [
