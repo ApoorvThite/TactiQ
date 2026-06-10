@@ -7,6 +7,8 @@ venv/
 .DS_Store
 *.egg-info/
 .ipynb_checkpoints/
-models/*.pkl
 models/*.joblib
+# Allow the two dashboard model files
+!models/xgboost_calibrated.pkl
+!models/shap_explainer.pkl
 .streamlit/secrets.toml
