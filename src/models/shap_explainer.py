@@ -1,7 +1,6 @@
 """Phase 5 Step 1–3 — SHAP TreeExplainer: fit, global analysis, waterfall plots."""
 
 import pickle
-import sys
 import warnings
 from pathlib import Path
 
@@ -156,9 +155,8 @@ def global_analysis(explainer, shap_values, X):
 
     try:
         # shap_interaction: (460, 15, 15) per class — compute for class 0 (WIN)
-        import xgboost as xgb
         with open(MODELS_DIR / 'xgboost_matchup.pkl', 'rb') as f:
-            raw_model = pickle.load(f)
+            pickle.load(f)
         si = explainer.shap_interaction_values(X)
         # si shape: (460, 15, 15, 3) or (460, 15, 15) depending on shap version
         if si.ndim == 4:
@@ -268,7 +266,7 @@ def waterfall_and_summary(explainer, model_raw, model_calib, team_a, team_b,
     plt.close('all')
 
     # Text summary
-    ev_display = ev if abs(ev) < 5 else 0.0   # base rate in log-odds; show raw
+    ev if abs(ev) < 5 else 0.0   # base rate in log-odds; show raw
     print(f'{"─"*55}')
     name_a, name_b = team_a["team_name"], team_b["team_name"]
     print(f' SHAP Explanation: {name_a} vs {name_b} → {predicted_cls.upper()}')

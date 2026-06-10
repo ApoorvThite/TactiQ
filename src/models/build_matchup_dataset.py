@@ -1,6 +1,5 @@
 """Phase 4 Step 1 — Build the matchup training dataset from historical matches."""
 
-import json
 import os
 import sys
 from pathlib import Path
@@ -100,7 +99,7 @@ def build_matchup_dataset() -> pd.DataFrame:
                matches_played AS opp_matches_played
         FROM team_style_profiles
     """
-    opp_df = pd.read_sql(opp_query, conn).set_index('team_id')
+    pd.read_sql(opp_query, conn).set_index('team_id')
     conn.close()
 
     rows = []
@@ -109,8 +108,8 @@ def build_matchup_dataset() -> pd.DataFrame:
     match_groups = df.groupby('match_id')
 
     for match_id, grp in match_groups:
-        home_rows = grp[grp['is_home'] == True]
-        away_rows = grp[grp['is_home'] == False]
+        home_rows = grp[grp['is_home']]
+        away_rows = grp[not grp['is_home']]
 
         if len(home_rows) != 1 or len(away_rows) != 1:
             continue

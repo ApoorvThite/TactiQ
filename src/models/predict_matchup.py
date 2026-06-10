@@ -1,6 +1,5 @@
 """Phase 4 Step 7 — Matchup prediction function."""
 
-import json
 import os
 import pickle
 import sys

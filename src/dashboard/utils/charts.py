@@ -2,15 +2,12 @@
 
 from __future__ import annotations
 
-import numpy as np
 import pandas as pd
 import plotly.graph_objects as go
-from plotly.subplots import make_subplots
 
 from src.dashboard.utils.styles import (
     ARCHETYPE_COLORS, ARCHETYPE_COLORS_MUTED,
-    PLOTLY_LAYOUT, PROXY_COLOR,
-    TACTIQ_CARD, TACTIQ_DARK, TACTIQ_MUTED, TACTIQ_TEXT, TACTIQ_TEAL, TACTIQ_AMBER,
+    PLOTLY_LAYOUT, TACTIQ_CARD, TACTIQ_DARK, TACTIQ_MUTED, TACTIQ_TEXT, TACTIQ_TEAL, TACTIQ_AMBER,
 )
 
 # ─── Human-readable feature labels ────────────────────────────────────────────
@@ -168,7 +165,7 @@ def radar_chart(
         df['press_intensity'] = 1.0 / df['avg_ppda'].clip(lower=0.5)
 
     feature_cols = [f for f, _ in RADAR_AXES]
-    labels       = [l for _, l in RADAR_AXES]
+    labels       = [lbl for _, lbl in RADAR_AXES]
 
     for col in feature_cols:
         df[col + '_n'] = _norm_col(df[col].fillna(df[col].median()))

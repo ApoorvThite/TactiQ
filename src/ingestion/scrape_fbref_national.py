@@ -5,14 +5,12 @@ missing team. Computes a 10-feature style vector for cluster assignment.
 Falls back to proxy centroid if fewer than 3 parseable matches are found.
 """
 
-import os
 import random
 import sys
 import time
 from pathlib import Path
 
 import numpy as np
-import pandas as pd
 import requests
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
@@ -117,7 +115,7 @@ def _fetch_page(url, session):
         resp = session.get(url, headers=HEADERS, timeout=30)
         resp.raise_for_status()
         return resp.text
-    except Exception as e:
+    except Exception:
         return None
 
 

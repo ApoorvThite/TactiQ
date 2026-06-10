@@ -1,6 +1,5 @@
 """Phase 5 Step 4 — Upset detector for WC2026 official group stage fixtures."""
 
-import json
 import os
 import sys
 from pathlib import Path
@@ -441,7 +440,7 @@ def run_upset_detector(explainer, model_calib):
     groups_no_upset = [g for g, cands in groups_seen.items() if not any(cands)]
     highest = max(upset_rows, key=lambda x: x['p_not_fav_win']) if upset_rows else None
 
-    print(f'\nSUMMARY')
+    print('\nSUMMARY')
     print(f'  Matchups analysed    : {len(rows)}')
     print(f'  Upset candidates     : {len(upset_rows)}')
     print(f'  Groups with 0 upsets : {", ".join(sorted(groups_no_upset)) or "none"}')

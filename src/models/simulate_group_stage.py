@@ -173,7 +173,7 @@ def run_simulations(predictions_df):
         if (sim_i + 1) % 2000 == 0:
             print(f'    ... {sim_i + 1:,} / {N_SIMS:,} done')
 
-    print(f'  Simulations complete.')
+    print('  Simulations complete.')
 
     # Aggregate into probabilities
     results = {}
@@ -272,7 +272,7 @@ def save_csv(results):
     pd.DataFrame(list(results.values())).sort_values(
         ['group', 'p_qualify_r32'], ascending=[True, False]
     ).to_csv(out, index=False)
-    print(f'  Saved → data/processed/qualification_probabilities.csv')
+    print('  Saved → data/processed/qualification_probabilities.csv')
 
 
 if __name__ == '__main__':

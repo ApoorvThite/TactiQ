@@ -41,9 +41,9 @@ def main():
     dist = metrics['class_dist']
     total = sum(dist.values())
     print('\nTRAINING DATA')
-    print(f'  Matches used     : 230')
-    print(f'  Training rows    : 460')
-    print(f'  Features         : 15 (10 style delta + 5 context)')
+    print('  Matches used     : 230')
+    print('  Training rows    : 460')
+    print('  Features         : 15 (10 style delta + 5 context)')
     dist_str = ' / '.join(f'{k} {v/total*100:.0f}%' for k, v in dist.items())
     print(f'  Class balance    : {dist_str}')
 

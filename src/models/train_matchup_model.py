@@ -193,7 +193,7 @@ def train_matchup_model():
         'verbosity':   0,
     })
 
-    print(f'Optuna: 50 trials complete')
+    print('Optuna: 50 trials complete')
     print(f'Best log loss (CV)  : {study.best_value:.3f}')
     print('Best params:')
     for k in ['n_estimators', 'max_depth', 'learning_rate', 'subsample',
@@ -249,7 +249,7 @@ def train_matchup_model():
 
     beats_ll  = np.mean(cv_lls) < baseline_ll
     beats_acc = np.mean(cv_accs) > baseline_acc
-    print(f'\nBeats majority-class baseline?')
+    print('\nBeats majority-class baseline?')
     print(f'  Log Loss : {"YES" if beats_ll  else "NO"}  (model: {np.mean(cv_lls):.3f} vs baseline: {baseline_ll:.3f})')
     print(f'  Accuracy : {"YES" if beats_acc else "NO"}  (model: {np.mean(cv_accs)*100:.1f}% vs baseline: {baseline_acc*100:.1f}%)')
 
@@ -294,7 +294,6 @@ def train_matchup_model():
         brier_post[name] = brier_score_loss(y_bin, calib_proba[:, i])
 
     # For reliability diagram — use OOF raw vs calibrated
-    y_calib = y
 
     print('\nBrier Scores (after calibration):')
     for name in LABEL_NAMES:
@@ -319,7 +318,8 @@ def train_matchup_model():
         ax.set_ylabel('Fraction of positives', fontsize=10)
         ax.set_title(f'Reliability Diagram — {cls_name.capitalize()} class', fontsize=11)
         ax.legend(fontsize=8, framealpha=0.4)
-        ax.set_xlim(0, 1); ax.set_ylim(0, 1)
+        ax.set_xlim(0, 1)
+        ax.set_ylim(0, 1)
     fig.suptitle('TactiQ — Probability Calibration', fontsize=13, y=1.01)
     fig.tight_layout()
     fig.savefig(FIGURES_DIR / 'fig6_calibration.png', dpi=150, bbox_inches='tight')

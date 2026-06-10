@@ -7,7 +7,6 @@ import sys
 from pathlib import Path
 
 import numpy as np
-import pandas as pd
 import psycopg2
 from dotenv import load_dotenv
 
@@ -23,7 +22,7 @@ from src.models.shap_explainer import (
     fit_explainer, global_analysis, waterfall_and_summary,
     FEATURE_NAMES,
 )
-from src.models.upset_detector  import run_upset_detector, WC2026_GROUP_FIXTURES, LABEL_NAMES
+from src.models.upset_detector  import run_upset_detector, LABEL_NAMES
 from src.models.explain_matchup import run_all_narratives
 
 
@@ -215,7 +214,7 @@ def main():
     top_win_feat  = FEATURE_NAMES[int(np.argmax(mean_abs['win']))]
     top_draw_feat = FEATURE_NAMES[int(np.argmax(mean_abs['draw']))]
     print('\nSHAP ANALYSIS')
-    print(f'  Training rows explained  : 460')
+    print('  Training rows explained  : 460')
     win_idx  = int(np.argmax(mean_abs['win']))
     draw_idx = int(np.argmax(mean_abs['draw']))
     print(f'  Top global feature (win) : {top_win_feat}  '
@@ -226,7 +225,7 @@ def main():
     print(f'\nWATERFALL PLOTS GENERATED: {len(waterfall_results)} / 5 '
           f'{"✓" if len(waterfall_results) == 5 else "!"}')
 
-    print(f'\nUPSET DETECTOR')
+    print('\nUPSET DETECTOR')
     print(f'  WC2026 matchups analysed : {len(upset_rows)}')
     print(f'  Upset candidates found   : {len(upset_candidates)}')
     if top_upset:
@@ -236,7 +235,7 @@ def main():
     print(f'\nTACTICAL NARRATIVES: {sum(1 for n in narratives if n)} / 5 '
           f'{"✓" if sum(1 for n in narratives if n) == 5 else "!"}')
 
-    print(f'\nDATABASE')
+    print('\nDATABASE')
     print(f'  matchup_shap_values rows : {db_count}')
 
     print('\nSAVED ARTIFACTS')
@@ -268,9 +267,12 @@ if __name__ == '__main__':
         # Skip SHAP fitting / global plots / waterfall — reload saved artifacts
         import pickle as _pkl
         print('\n[--upset-only] Loading saved models...')
-        with open(MODELS_DIR / 'xgboost_matchup.pkl',    'rb') as _f: _raw = _pkl.load(_f)
-        with open(MODELS_DIR / 'xgboost_calibrated.pkl', 'rb') as _f: _cal = _pkl.load(_f)
-        with open(MODELS_DIR / 'shap_explainer.pkl',     'rb') as _f: _exp = _pkl.load(_f)
+        with open(MODELS_DIR / 'xgboost_matchup.pkl', 'rb') as _f:
+            _raw = _pkl.load(_f)
+        with open(MODELS_DIR / 'xgboost_calibrated.pkl', 'rb') as _f:
+            _cal = _pkl.load(_f)
+        with open(MODELS_DIR / 'shap_explainer.pkl', 'rb') as _f:
+            _exp = _pkl.load(_f)
         _rows = run_upset_detector(_exp, _cal)
         # Refresh DB
         _db_rows = []

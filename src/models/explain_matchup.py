@@ -173,7 +173,7 @@ def explain_matchup(team_a_name: str, team_b_name: str,
                                     float(matchup_id), float(delta_mp), float(comp_w)]])
 
     with open(MODELS_DIR / 'xgboost_matchup.pkl', 'rb') as f:
-        raw_model = pickle.load(f)
+        pickle.load(f)
     with open(MODELS_DIR / 'xgboost_calibrated.pkl', 'rb') as f:
         cal_model = pickle.load(f)
     with open(MODELS_DIR / 'shap_explainer.pkl', 'rb') as f:
@@ -234,8 +234,8 @@ def explain_matchup(team_a_name: str, team_b_name: str,
             line = w
     if line:
         lines.append(line)
-    for l in lines:
-        print(l)
+    for line in lines:
+        print(line)
     print('─' * width)
     print()
 

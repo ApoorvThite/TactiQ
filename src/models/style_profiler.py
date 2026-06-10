@@ -293,7 +293,7 @@ class StyleProfiler:
     def _assign_archetype_names(self, centroid_df):
         """Inspect centroids and assign canonical archetype names."""
         k   = self.chosen_k
-        avail_archetypes = list(ARCHETYPE_DEFINITIONS.keys())[:k]
+        list(ARCHETYPE_DEFINITIONS.keys())[:k]
 
         # Score each cluster on key axes
         scores = {}
@@ -382,7 +382,7 @@ class StyleProfiler:
 
         avg_sims = {t: (sim[i].sum() - 1) / (n - 1) for i, t in enumerate(teams)}
         unique_team = min(avg_sims, key=avg_sims.get)
-        print(f'\nMost stylistically unique team (lowest avg similarity to all others):')
+        print('\nMost stylistically unique team (lowest avg similarity to all others):')
         print(f'  {unique_team} : avg similarity = {avg_sims[unique_team]:.3f}')
 
         self._avg_sims    = avg_sims
@@ -548,7 +548,7 @@ class StyleProfiler:
             ax.set_yticks([0.25, 0.5, 0.75, 1.0])
             ax.set_yticklabels(['0.25', '0.5', '0.75', '1.0'], size=6, color='grey')
             ax.set_ylim(0, 1)
-            teams_str = ', '.join(sorted(self.df[mask]['team_name'].tolist()))
+            ', '.join(sorted(self.df[mask]['team_name'].tolist()))
             ax.set_title(f'{name}\n({mask.sum()} teams)', size=9, pad=14, color=color_map[name])
             ax.tick_params(colors='white')
 

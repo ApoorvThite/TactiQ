@@ -22,7 +22,7 @@ ROOT          = Path(__file__).resolve().parents[2]
 MODELS_DIR    = ROOT / 'models'
 PROCESSED_DIR = ROOT / 'data' / 'processed'
 
-from src.models.upset_detector import WC2026_GROUP_FIXTURES, PROXY_ARCHETYPES
+from src.models.upset_detector import WC2026_GROUP_FIXTURES
 
 FEATURE_NAMES = [
     'delta_avg_possession_pct', 'delta_avg_ppda', 'delta_avg_pressure_success_rate',
@@ -250,7 +250,7 @@ def save_predictions_csv(predictions):
     rows = [{k: v for k, v in r.items() if k not in skip} for r in predictions]
     out = PROCESSED_DIR / 'group_stage_predictions.csv'
     pd.DataFrame(rows).to_csv(out, index=False)
-    print(f'  Saved → data/processed/group_stage_predictions.csv')
+    print('  Saved → data/processed/group_stage_predictions.csv')
 
 
 if __name__ == '__main__':

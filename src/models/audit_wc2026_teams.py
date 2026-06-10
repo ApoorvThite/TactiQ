@@ -170,8 +170,8 @@ def audit_teams():
     with open(PROCESSED_DIR / 'wc2026_teams_missing.json', 'w') as f:
         json.dump(missing, f, indent=2)
 
-    print(f'\nSaved → data/processed/wc2026_teams_in_db.json')
-    print(f'Saved → data/processed/wc2026_teams_missing.json')
+    print('\nSaved → data/processed/wc2026_teams_in_db.json')
+    print('Saved → data/processed/wc2026_teams_missing.json')
 
     return in_db, missing, stale
 

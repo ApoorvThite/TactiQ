@@ -139,15 +139,15 @@ def main():
     out_bracket = PROCESSED_DIR / 'predicted_bracket.json'
     with open(out_bracket, 'w') as f:
         json.dump(bracket, f, indent=2)
-    print(f'\n  Saved → data/processed/predicted_bracket.json')
+    print('\n  Saved → data/processed/predicted_bracket.json')
 
     cur.close()
     conn.close()
 
     # ── Final summary ─────────────────────────────────────────────────────────
     n_in_db   = len(in_db)
-    n_missing = len(missing)
-    n_proxy   = proxy_count + sum(1 for e in missing if e['team_name'] not in scraped_results)
+    len(missing)
+    proxy_count + sum(1 for e in missing if e['team_name'] not in scraped_results)
     n_direct  = n_pred
     upset_count = sum(1 for p in predictions if p.get('is_upset_candidate'))
 
@@ -158,7 +158,7 @@ def main():
     print('='*62)
 
     print('\nTEAM COVERAGE')
-    print(f'  WC2026 qualified teams   : 48')
+    print('  WC2026 qualified teams   : 48')
     print(f'  Teams in DB (StatsBomb)  : {n_in_db}')
     print(f'  Teams scraped (FBref)    : {scraped_count}')
     print(f'  Teams using proxy vector : {proxy_count}')
@@ -168,13 +168,13 @@ def main():
     print(f'  Upset candidates         : {upset_count}')
 
     print('\nMONTE CARLO SIMULATION')
-    print(f'  Simulation runs          : 10,000')
-    print(f'  Top-5 qualification odds :')
+    print('  Simulation runs          : 10,000')
+    print('  Top-5 qualification odds :')
     for r in top_qual:
         print(f'    {r["team_name"]:<25} (Group {r["group"]}) '
               f'p(R32) = {r["p_qualify_r32"]*100:.1f}%')
 
-    print(f'\nKNOCKOUT BRACKET')
+    print('\nKNOCKOUT BRACKET')
     print(f'  Predicted champion       : {bracket["Champion"]}')
 
     print('\nSAVED ARTIFACTS')

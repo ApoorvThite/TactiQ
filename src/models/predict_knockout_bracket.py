@@ -227,7 +227,7 @@ def build_predicted_bracket(qual_probs_df, model_calib, cur):
     sf_winners = _play_round(sf_pairs, 'SF')
 
     if len(sf_winners) >= 2:
-        print(f'\n  Final:')
+        print('\n  Final:')
         final_winners = _play_round([(sf_winners[0], sf_winners[1])], 'Final')
         champion = final_winners[0] if final_winners else sf_winners[0]
     elif sf_winners:
@@ -281,7 +281,7 @@ if __name__ == '__main__':
     out = PROCESSED_DIR / 'predicted_bracket.json'
     with open(out, 'w') as f:
         json.dump(bracket, f, indent=2)
-    print(f'\nSaved → data/processed/predicted_bracket.json')
+    print('\nSaved → data/processed/predicted_bracket.json')
 
     cur.close()
     conn.close()

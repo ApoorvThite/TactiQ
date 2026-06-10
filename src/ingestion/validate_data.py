@@ -121,7 +121,8 @@ def main():
     with_loc = q1(cur, "SELECT COUNT(*) FROM match_events WHERE location_x IS NOT NULL")
     with_pres = q1(cur, "SELECT COUNT(*) FROM match_events WHERE under_pressure IS NOT NULL")
 
-    pct = lambda a, b: f"{100*a//b}%" if b else "N/A"
+    def pct(a, b):
+        return f"{100*a//b}%" if b else "N/A"
     print(f"  Matches with both scores present : {scored} / {total_matches} ({pct(scored, total_matches)})")
     print(f"  Events with location data        : {with_loc:,} / {total_events:,} ({pct(with_loc, total_events)})")
     print(f"  Events with under_pressure flag  : {with_pres:,} / {total_events:,} ({pct(with_pres, total_events)})")
