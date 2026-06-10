@@ -11,7 +11,6 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from src.models.upset_detector import (
     FEATURE_NAMES,
     _build_feature_vector,
-    is_upset_candidate,
 )
 
 STYLE_DIM = 10  # number of style features per team
