@@ -50,7 +50,89 @@ with col_date:
         unsafe_allow_html=True,
     )
 
-st.markdown('<div style="height:1.25rem;"></div>', unsafe_allow_html=True)
+st.markdown('<div style="height:1rem;"></div>', unsafe_allow_html=True)
+
+# ── Project brief + glossary ──────────────────────────────────────────────────
+st.markdown(
+    """
+    <div style="background:#0A0F1C; border:1px solid rgba(255,255,255,0.07);
+                border-radius:14px; padding:1.4rem 1.75rem; margin-bottom:1.5rem;">
+
+        <p style="color:#C0C8E8; font-size:0.95rem; line-height:1.7; margin:0 0 1.1rem;">
+            <b style="color:#E8EDF8;">TactiQ</b> is a tactical intelligence engine built on
+            <b style="color:#E8EDF8;">843,000+ StatsBomb match events</b> across four major tournaments.
+            It clusters all 48 FIFA World Cup 2026 nations into tactical archetypes using unsupervised learning,
+            then powers an XGBoost model to predict match outcomes with SHAP-attributed explanations —
+            showing not just <em>who</em> wins, but <em>why</em>.
+        </p>
+
+        <div style="font-size:0.68rem; color:#5A6490; font-weight:700; text-transform:uppercase;
+                    letter-spacing:0.12em; margin-bottom:0.75rem; padding-bottom:0.4rem;
+                    border-bottom:1px solid rgba(255,255,255,0.06);">
+            Key Metrics Glossary
+        </div>
+
+        <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:0.6rem 1.5rem;">
+
+            <div>
+                <span style="color:#00D4A0; font-weight:700; font-size:0.88rem;">PPDA</span>
+                <span style="color:#5A6490; font-size:0.78rem;"> — Passes Allowed Per Defensive Action</span>
+                <div style="color:#8B93B8; font-size:0.78rem; margin-top:2px; line-height:1.45;">
+                    Measures pressing intensity. <b style="color:#C0C8E8;">Lower = more aggressive press.</b>
+                    A PPDA of 6 means a team allows only 6 opposition passes before winning the ball back.
+                </div>
+            </div>
+
+            <div>
+                <span style="color:#7C6FE0; font-weight:700; font-size:0.88rem;">xG</span>
+                <span style="color:#5A6490; font-size:0.78rem;"> — Expected Goals</span>
+                <div style="color:#8B93B8; font-size:0.78rem; margin-top:2px; line-height:1.45;">
+                    The probability that a shot results in a goal, based on shot location, angle, and assist type.
+                    <b style="color:#C0C8E8;">xG &gt; 1.5 per game</b> signals a dangerous attack.
+                </div>
+            </div>
+
+            <div>
+                <span style="color:#3B98EA; font-weight:700; font-size:0.88rem;">xG Ratio</span>
+                <span style="color:#5A6490; font-size:0.78rem;"> — xG For ÷ (xG For + xG Against)</span>
+                <div style="color:#8B93B8; font-size:0.78rem; margin-top:2px; line-height:1.45;">
+                    A team's share of the combined xG in their matches.
+                    <b style="color:#C0C8E8;">Above 0.5 = creating more danger than conceding.</b>
+                </div>
+            </div>
+
+            <div>
+                <span style="color:#FBBF24; font-weight:700; font-size:0.88rem;">SHAP</span>
+                <span style="color:#5A6490; font-size:0.78rem;"> — SHapley Additive exPlanations</span>
+                <div style="color:#8B93B8; font-size:0.78rem; margin-top:2px; line-height:1.45;">
+                    A game-theoretic method that explains each feature's contribution to a model prediction.
+                    Used here to show <b style="color:#C0C8E8;">why the model favours a particular outcome.</b>
+                </div>
+            </div>
+
+            <div>
+                <span style="color:#F07050; font-weight:700; font-size:0.88rem;">UMAP</span>
+                <span style="color:#5A6490; font-size:0.78rem;"> — Uniform Manifold Approximation & Projection</span>
+                <div style="color:#8B93B8; font-size:0.78rem; margin-top:2px; line-height:1.45;">
+                    A dimensionality reduction algorithm that maps 10-dimensional style vectors into 2D.
+                    <b style="color:#C0C8E8;">Teams closer together play more similarly.</b>
+                </div>
+            </div>
+
+            <div>
+                <span style="color:#5EA9E8; font-weight:700; font-size:0.88rem;">Press Success Rate</span>
+                <span style="color:#5A6490; font-size:0.78rem;"> — % of presses that win possession</span>
+                <div style="color:#8B93B8; font-size:0.78rem; margin-top:2px; line-height:1.45;">
+                    Of all high-intensity defensive actions, how many result in regaining the ball.
+                    <b style="color:#C0C8E8;">High press intensity with low success = risky strategy.</b>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
 
 # ── KPI cards ─────────────────────────────────────────────────────────────────
 kpis = [
