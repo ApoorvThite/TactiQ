@@ -41,6 +41,7 @@ dev = [
 [tool.ruff]
 line-length = 120
 target-version = "py310"
+exclude = ["src/dashboard/assets"]
 
 [tool.ruff.lint]
 select = ["E", "W", "F"]
